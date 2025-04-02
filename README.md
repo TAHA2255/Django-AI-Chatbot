@@ -25,24 +25,11 @@ Before you begin, ensure you have the following installed:
 
 1.  **Clone the repository (if you haven't already):**
     ```bash
-    git clone <your_repository_url>
+    git clone https://github.com/TAHA2255/Django-AI-Chatbot
     cd chatbot
     ```
 
-2.  **Create a virtual environment (recommended):**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On macOS/Linux
-    venv\Scripts\activate  # On Windows
-    ```
-
-3.  **Install project dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-    *(You might need to create this file first. See the "Creating `requirements.txt`" section below)*
-
-4.  **Set up environment variables:**
+2.  **Set up environment variables:**
     * Create a `.env` file in the root of your project (next to `manage.py`).
     * Add your DeepInfra API key to this file:
         ```
@@ -65,17 +52,17 @@ Before you begin, ensure you have the following installed:
         ```
         *(Then, in your `main/views.py`, you can directly access it using `settings.DEEPINFRA_API_KEY`)*
 
-5.  **Apply migrations:**
+3.  **Apply migrations:**
     ```bash
     python manage.py migrate
     ```
 
-6.  **Create a superuser (optional, for Django admin):**
+4.  **Create a superuser (optional, for Django admin):**
     ```bash
     python manage.py createsuperuser
     ```
 
-7.  **Run the development server:**
+5.  **Run the development server:**
     ```bash
     python manage.py runserver
     ```
